@@ -1,0 +1,23 @@
+footer {
+  border-top: 1px solid @border-color;
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+  padding-top: 14px;
+  nav {
+    margin-left: auto;
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        border-right: 1px solid @color3;
+        margin-left: 5px;
+        padding-right: 5px;
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}

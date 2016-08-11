@@ -1,0 +1,35 @@
+header {
+  border-bottom: 1px solid @border-color;
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+  padding: 38px 0 26px;
+  nav {
+    margin-left: auto;
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        margin-right: 10px;
+        text-align: center;
+        width: 80px;
+        a {
+          color: @color;
+          font-size: 18px;
+          text-transform: uppercase;
+        }
+      }
+      .active{
+        .border-radius-custom(3px, 3px, 3px, 3px);
+        background: @nav-bg-color;
+        border: 1px solid @border-color;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    nav {
+      margin-top: 10px;
+    }
+  }
+}

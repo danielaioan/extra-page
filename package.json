@@ -1,0 +1,18 @@
+{
+  "name": "exozet",
+  "version": "1.0.0",
+  "description": "test",
+  "author": "Daniela Ioan",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:danielaioan/webpage-task.git"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-if": "^2.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.0"
+  }
+}

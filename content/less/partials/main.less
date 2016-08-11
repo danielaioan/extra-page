@@ -1,0 +1,171 @@
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 36px 20px 30px;
+  span {
+    color: @color2;
+  }
+  .left-sidebar {
+    width: 70%;
+  }
+  .news {
+    padding-bottom: 45px;
+    h1 {
+      border: none;
+      padding-bottom: 20px;
+    }
+    h2 {
+      width: 438px;
+      margin: 0 auto;
+      padding: 0 0 15px 0;
+    }
+    hr {
+      border-top: 1px solid @border-color;
+      margin: 0 auto 15px;
+      width: 300px;
+    }
+    p:first-child {
+      padding-bottom: 20px;
+    }
+  }
+  .lorempixel {
+    float: left;
+    margin: 12px 10px 12px 0;
+    span {
+      display: block;
+    }
+  }
+  h1 {
+    border-bottom: 1px solid @border-color;
+    margin-bottom: 25px;
+  }
+  .contact {
+    float: left;
+    padding-bottom: 45px;
+    width: 100%;
+    p {
+      padding: 0 0 15px 95px;
+    }
+    span {
+      color: @color3;
+    }
+    form {
+      margin-left: 95px;
+      width: 70%;
+      label {
+        display: block;
+        float: left;
+        padding-right: 20px;
+        text-align: right;
+        width: 95px;
+      }
+      input, textarea {
+        .border-radius-custom(3px, 3px, 3px, 3px);
+        border: 1px solid @border-color;
+        float: left;
+        margin-bottom: 10px;
+        padding: 3px;
+        width: 74%;
+      }
+      .error {
+        color: @color4;
+        display: block;
+        padding: 0 0 13px 95px;
+      }
+      button {
+        .border-radius-custom(3px, 3px, 3px, 3px);
+        .gradient(to bottom, #b3c289, #769329);
+        border: 1px solid @border-button-color;
+        color: @color5;
+        float: right;
+        padding: 4px 15px;
+        text-shadow: 0 1px #606c40;
+      }
+    }
+  }
+  .scope {
+    ol {
+      float: left;
+      list-style-position: inside;
+      margin-left: 10px;
+      li {
+        width: auto;
+      }
+    }
+    ul {
+      float:right;
+      margin-right: 105px;
+    }
+  }
+  .sidebar {
+    margin-left: auto;
+    padding-top: 35px;
+    width: 22%;
+    h3 {
+      border-bottom: 1px solid @border-color;
+      margin-bottom: 15px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    .internal_links i{
+      font-size: 10px;
+    }
+    address {
+      padding-bottom: 20px;
+    }
+    .read_more {
+      background: @bg-color;
+      border: 1px solid @border-color;
+      border-top: none;
+      padding: 6px 9px 12px;
+      p {
+        padding-bottom: 10px;
+      }
+      a {
+        .border-radius-custom(3px, 3px, 3px, 3px);
+        .gradient(to bottom, #b3c289, #769329);
+        border: 1px solid @border-button-color;
+        color: @color5;
+        display: block;
+        padding: 2px 20%;
+        text-align: center;
+      }
+    }
+  }
+  @media (max-width: 790px) {
+    .contact {
+      p {
+        padding-left: 0;
+      }
+      form {
+        margin: 0;
+        width: 100%;
+        .error {
+          padding-left: 0;
+        }
+        label {
+          text-align: left;
+        }
+        input, textarea {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 650px) {
+    flex-direction: column;
+    .left-sidebar {
+      width:100%;
+    }
+    .sidebar {
+      margin-left: 0;
+      width: 40%;
+    }
+  }
+  @media (max-width: 500px) {
+    .news h2 {
+      width: 295px;
+    }
+  }
+}
